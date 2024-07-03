@@ -2,7 +2,7 @@ import { ProductNameTypes } from "../types/types"
 
 
 export interface IProduct{
-  id:string,
+  id?:string | undefined,
   title:string,
   description:string,
   imageURL:string,
@@ -25,7 +25,7 @@ export interface ICategory{
 
 
 export interface IFormInput{
-  id: string,
+    id: string,
     name: ProductNameTypes,
     label: string,
     type: string,
